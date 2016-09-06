@@ -175,6 +175,32 @@ app.get('/s/:encoded_id', function(req, res) {
 });
 
 
+app.get('/:encoded_id', function(req, res) {
+    var base58Id = req.params.encoded_id;
+    var id = decode(base58Id);
+
+    urls.orderByChild("id").equalTo(id).limitToFirst(1).once('value', function(snapshot) {
+        if (snapshot.val()) {
+
+            var ref = db.ref("urls/" + Object.keys(snapshot.val())[0] + "/views");
+            ref.transaction(function(curr) {
+                return curr + 1;
+            }, function function_name() {
+                res.redirect((snapshot.val()[Object.keys(snapshot.val())[0]]).long_url);
+            })
+
+
+
+        } else {
+            res.redirect(req.get('host'));
+        }
+    })
+
+
+
+});
+
+
 
 
 
