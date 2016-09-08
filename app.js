@@ -14,7 +14,7 @@ app.use(wildcardSubdomains({
 
 
 
-app.use(express.static('build'));
+app.use(express.static('./frontend/build'));
 
 
 firebase.initializeApp({
@@ -192,7 +192,7 @@ app.get('/:encoded_id', function(req, res) {
 
 
         } else {
-            res.redirect(req.get('host'));
+            res.redirect('http://urlsh.me');
         }
     })
 

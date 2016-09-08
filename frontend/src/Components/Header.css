@@ -1,0 +1,84 @@
+.cs-full {
+    min-height: 700px;
+    height: 100vh;
+    background-color: #ec383e;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center ;
+    align-content: flex-end;
+    align-items: center; 
+}
+
+.cs-curtain {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    transition: 0.5s all;
+    z-index: 1;
+}
+
+.cs-see-more {
+    flex: 1 1 auto;
+    align-self: auto;
+    order: 2;
+    min-width: 0;
+    min-height: auto;
+
+    z-index: 3;
+    
+}
+
+.cs-see-more > a {
+    color: #ffeb3b !important;
+    text-decoration: none !important;
+    
+}
+
+
+
+.cs-shortlink {
+    flex: 1 1 auto;
+    align-self: auto;
+    order: 2;
+    min-width: 0;
+    min-height: auto;
+    z-index: 44;
+}
+
+.cs-shortlink > a {
+    color: #ffeb3b !important;
+    text-decoration: none !important;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 0px 5px;
+}
+
+.cs-error {
+    align-self: auto;
+    order: 2;
+    min-width: 0;
+    min-height: auto;
+    z-index: 44;
+    color: #ffeb3b !important;
+    text-decoration: none !important;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 0px 5px;
+}
+
+
+
+.cs-see-more > a:hover {
+    color: #eee !important;
+    text-decoration: none;
+}
+
+.decoration6  {
+    height: 10px;
+    background: #ffc0c26;
+}
+

@@ -1,0 +1,96 @@
+.cs-srch-input {
+    border-radius: 0px !important; 
+    border-color: #000 !important;
+    border-width: 2px !important;
+    border-right: 0px !important;
+    font-family: monospace;
+    height: 39px !important;
+    width:600px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.cs-srch-input:focus {
+    background: #eee;
+    transition: 0.4s all;
+}
+
+
+.cs-srch-container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 9 1 auto;
+    align-self: flex-start;
+    order: 1;
+    padding-top:200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center ;
+    align-content: flex-end;
+    align-items: center; 
+}
+
+
+
+.cs-srch-btn {
+    font-family: monospace !important;
+    text-transform: uppercase !important;
+    font-weight: 800 !important;
+    background-color: #fff !important;
+    border: 2px #000 solid !important;
+    border-left: 0px !important;
+    height: 39px !important;
+    width:100px;
+    color: #ec383e;
+    z-index: 1;
+}
+
+.btn-fix {
+    background-color: #fff !important;
+    height: 36px !important;
+    color: #ec383e !important;
+    font-weight: 800;
+}
+
+
+@media all and (max-width:500px){
+ 
+  .cs-srch-container {
+    width:350px ;
+  } 
+
+}
+
+
+@media all and (max-width:380px){
+ 
+  .cs-srch-container {
+    width:300px ;
+  } 
+
+}
+
+
+
+
+
+
+@media all and (min-width:500px){
+ 
+  .cs-srch-container {
+    width:350px ;
+  } 
+
+
+
+}
+
+@media all and (min-width:700px){
+ 
+  .cs-srch-container {
+    width:600px ;
+  } 
+}
+
+

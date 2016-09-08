@@ -1,0 +1,130 @@
+
+
+.cs-signup {
+
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 9 1 auto;
+    align-self: flex-start;
+    order: 1;
+    
+
+    height: 30vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center ;
+    align-content: flex-end;
+    align-items: center; 
+
+}
+
+
+.cs-signup-input {
+    flex: 8; 
+
+    height: 50px !important;
+    background: #eee !important;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 10px 0px 10px;
+    font-family: monospace;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+
+.cs-signup-btn {
+    flex: 1;    
+
+    height: 50px !important;
+    background: #ec383e !important;
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 10px 0px 10px;
+    font-family: monospace;
+    font-size: 13px;
+    color: #fff;
+}
+
+
+
+
+@media all and (max-width:500px){
+ 
+
+.cs-signup {
+
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 9 1 auto;
+    align-self: flex-start;
+    order: 1;
+    
+
+    height: 30vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center ;
+    align-content: flex-end;
+    align-items: center; 
+
+}
+
+
+}
+
+@media all and (min-width:500px){
+ 
+
+.cs-signup {
+
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 9 1 auto;
+    align-self: flex-start;
+    order: 1;
+    
+
+    height: 30vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center ;
+    align-content: flex-end;
+    align-items: center; 
+
+}
+
+
+
+}
+
+@media all and (min-width:700px){
+ 
+
+.cs-signup {
+
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 9 1 auto;
+    align-self: flex-start;
+    order: 1;
+    
+
+    height: 30vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center ;
+    align-content: flex-end;
+    align-items: center; 
+
+}
+
+
+
+}
+
+

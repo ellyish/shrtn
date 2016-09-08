@@ -1,0 +1,234 @@
+* {
+    outline: none !important; 
+    font-family: 'open sans';
+}
+
+
+body {
+    overflow-x: hidden;
+
+}
+
+.cs-logo {
+    text-transform: uppercase !important;
+    font-weight: 400 !important;
+    color: #ec383e;
+    font-family: monospace;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    background: #fff;
+    padding-left: 30px;
+    height: 43px;
+    
+}
+
+.cs-logo > span {
+
+    text-transform: uppercase !important;
+    color: #ffeb3b;
+    font-size: 13px;
+    font-family: monospace;
+    display: list-item;
+    margin-top: 10px;
+}
+
+.cs-fat {
+    position: absolute;
+    left: 200px;
+    top: 85px;
+    height: 500px;
+}
+
+.cs-char {
+    position: absolute;
+    top: 160px;
+    height: 300px;
+}
+
+
+.cs-results {
+    max-width:700px;
+    margin: 30px auto;
+    padding:0px 20px;
+}
+
+.cs-list-container {
+
+}
+
+.cs-list-item {
+    display: flex;
+    flex-direction: row;
+    margin-top:10px;
+    align-items: baseline;
+}
+
+.cs-list-item-middle {
+    flex:10;
+}
+
+
+
+.cs-list-item  h4 {
+    font-size: 11px;
+    color: rgba(23, 21, 4, 0.48);
+    text-overflow: ellipsis;
+    display: block;
+}
+
+
+
+
+
+
+    
+.cs-list-item  h3 {
+    font-size: 17px;
+    color: #ec383e;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: block;
+
+
+}
+
+
+.cs-list-item  h2 {
+    font-size: 14px;
+    line-height: 1rem;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: block;
+
+}
+
+
+.cs-list-item .cs-count {
+    font-size: 14px;
+    color: #dad9da;
+    flex:1;
+}
+
+.cs-list-item  .cs-views {
+    font-size: 10px;
+    font-weight: bold;
+    color: #e2696d;
+    text-align: right;
+    flex: 1;
+}
+
+
+
+
+@media all and (max-width:700px){
+ 
+
+.cs-results {
+    max-width:500px;
+    margin: 30px auto;
+    padding:0px 20px;
+}
+
+}
+
+
+@media all and (max-width:500px){
+ 
+
+        .cs-fat {
+            position: absolute;
+            left: 200px;
+            top: 185px !important;
+            height: 250px !important;
+        }
+
+        .cs-thin {
+            position: absolute;
+            right: 10%;
+            top: 185px;
+            height: 250px !important;
+        }
+    
+}
+
+
+
+
+
+@media all and (max-width:1000px){
+ 
+
+        .cs-fat {
+            position: absolute;
+            left: 200px;
+            top: 185px;
+            height: 350px;
+        }
+
+        .cs-thin {
+            position: absolute;
+            right: 10%;
+            top: 185px;
+            height: 350px;
+        }
+    
+}
+
+
+
+
+@-webkit-keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  position: fixed;
+  width: 34px;
+  height: 34px;
+  top: 83%;
+  left: 50%;
+  margin-left: -17px;
+  margin-top: -17px;
+  z-index: 34;
+
+}
+.spinner:after, .spinner:before {
+  content: "";
+  position: fixed;
+  border: 2px solid #ffeb3b;
+  width: 30px;
+  height: 30px;
+}
+.spinner:after {
+  -webkit-animation: spinner 2.5s linear infinite;
+          animation: spinner 2.5s linear infinite;
+}
+.spinner:before {
+  width: 44px;
+  height: 44px;
+  margin-left: -7px;
+  margin-top: -7px;
+  -webkit-animation: spinner 2.5s linear infinite;
+          animation: spinner 2.5s linear infinite;
+  -webkit-animation-direction: reverse;
+          animation-direction: reverse;
+}
