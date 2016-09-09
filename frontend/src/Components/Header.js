@@ -106,12 +106,24 @@ class Header extends Component {
                 opacityWaiting: 0
             })
         })
-
-
-
     }
 
-
+  copyShortLink(){
+    //first selecting the text
+    var range = document.createRange(),
+    selection = window.getSelection();
+    range.selectNodeContents(this.refs.shorturl);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    //now copying to clipboard
+    try {
+      var successful = document.execCommand('copy');
+      var msg = successful ? 'successful' : 'unsuccessful';
+      console.log('Copying text command was ' + msg);
+    } catch (err) {
+      console.log('Oops, unable to copy');
+    }
+  }
 
     render() {
         return (
@@ -122,11 +134,16 @@ class Header extends Component {
               <div className="cs-curtain" style={{opacity: this.state.showCurtain }}></div>
 
               <h1 className="cs-logo">URLSH!<span>subdomain and popular short urls</span></h1>
-             
+
               <img style={{opacity:this.state.opacity, transition:'1s all'}} className="cs-char" src={this.state.short ? this.state.thin : this.state.fat }/>
 
                 {this.props.children}
-                <p style={{opacity:this.state.opacityResult, transition:'1s all'}}  className="cs-shortlink"><a target="_blank" href={this.state.shorturl}>{this.state.shorturl}</a></p>
+                <p style={{opacity:this.state.opacityResult, transition:'1s all'}}  className="cs-shortlink">
+                  <span>
+                    <a target="_blank" href={this.state.shorturl} ref="shorturl">{this.state.shorturl}</a>
+                    <span className="fa fa-clipboard" onClick={this.copyShortLink.bind(this)}></span>
+                  </span>
+                </p>
                 <p style={{opacity:this.state.opacityError, transition:'1s all'}}  className="cs-error">make sure the url format is correct</p>
 
 

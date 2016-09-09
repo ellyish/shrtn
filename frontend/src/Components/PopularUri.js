@@ -14,7 +14,7 @@ class PopularUri extends Component {
 
   constructor(props) {
     super(props);
-  
+
     this.state = {
       urls: []
     };
@@ -53,12 +53,12 @@ class PopularUri extends Component {
 
         <div id="results" className="cs-results">
           <div className="cs-list-container">
-    
+
             {this.state.urls.map((elm, i)=>{
 
                 return (
                   <div key={elm.id} className="cs-list-item">
-                    <div className="cs-count">{i} &nbsp;</div>
+                    <div className="cs-count">{i+1} &nbsp;</div>
 
                     <div className="cs-list-item-middle">
                     <h2 dangerouslySetInnerHTML={{__html: elm.title}} ></h2>
@@ -72,7 +72,7 @@ class PopularUri extends Component {
 
             })}
 
-  
+
           </div>
         </div>
 

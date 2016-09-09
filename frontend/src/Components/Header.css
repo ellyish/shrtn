@@ -7,7 +7,7 @@
     flex-flow: column nowrap;
     justify-content: center ;
     align-content: flex-end;
-    align-items: center; 
+    align-items: center;
 }
 
 .cs-curtain {
@@ -29,13 +29,13 @@
     min-height: auto;
 
     z-index: 3;
-    
+
 }
 
 .cs-see-more > a {
     color: #ffeb3b !important;
     text-decoration: none !important;
-    
+
 }
 
 
@@ -49,13 +49,22 @@
     z-index: 44;
 }
 
-.cs-shortlink > a {
+.cs-shortlink > span {
     color: #ffeb3b !important;
-    text-decoration: none !important;
     border: 1px solid;
     border-radius: 3px;
     padding: 0px 5px;
 }
+.cs-shortlink .fa {
+    cursor: pointer;
+}
+.cs-shortlink a {
+    text-decoration: none !important;
+    color: inherit;
+    padding-right: 5px;
+}
+.cs-shortlink a::-moz-selection { color: inherit; background: transparent;}
+.cs-shortlink a::selection { color: inherit; background: transparent; }
 
 .cs-error {
     align-self: auto;
@@ -81,4 +90,3 @@
     height: 10px;
     background: #ffc0c26;
 }
-
