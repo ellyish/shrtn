@@ -8,14 +8,20 @@
   "dependencies": {
     "axios": "^0.14.0",
     "bootstrap": "^4.0.0-alpha.3",
+    "chart.js": "^2.3.0",
+    "elemental": "^0.6.1",
     "firebase": "^3.3.0",
+    "halogen": "^0.2.0",
     "jquery": "^3.1.0",
     "pubsub-js": "^1.5.3",
-    "react": "^15.2.1",
+    "react": "^15.3.2",
+    "react-chartjs-2": "^1.2.9",
     "react-dom": "^15.2.1",
     "react-fontawesome": "^1.1.0",
+    "react-router": "^2.8.1",
     "react-share": "^1.8.5",
-    "react-social": "^1.4.3"
+    "react-social": "^1.4.3",
+    "underscore": "^1.8.3"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -4,11 +4,11 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 
 
-import ShrtnBar from './Components/ShrtnBar.js';
-import Header from './Components/Header.js';
-import Share from './Components/Share.js';
-import Footer from './Components/Footer.js';
-import PopularUri from './Components/PopularUri.js';
+import Shorten from './index/Shorten.js';
+import Header from './index/Header.js';
+import Share from './index/Share.js';
+import Footer from './index/Footer.js';
+import List from './index/List.js';
 
 
 
@@ -29,10 +29,10 @@ class App extends Component {
 
 
       <Header>
-          <ShrtnBar />
+          <Shorten />
       </Header>
 
-      <PopularUri/>
+      <List/>
 
 
       <Share/>

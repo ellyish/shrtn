@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import firebase from 'firebase';
+import { Router, Route, Link, browserHistory } from 'react-router'
 
   // Initialize Firebase
   var config = {
@@ -10,7 +11,7 @@ import firebase from 'firebase';
   };
   firebase.initializeApp(config);
 
-class PopularUri extends Component {
+class List extends Component {
 
   constructor(props) {
     super(props);
@@ -65,7 +66,7 @@ class PopularUri extends Component {
                     <h4><a target="_blank" href={elm.long_url}>{elm.long_url}</a></h4>
                     <h3><a target="_blank" href={ 'http://' + elm.short_url + '.urlsh.me'}>{elm.short_url}.urlsh.me</a></h3>
                     </div>
-                    <div className="cs-views">{elm.views}</div>
+                    <div className="cs-views"><Link to={`/login`}>{elm.views}</Link></div>
 
                   </div>)
 
@@ -84,4 +85,4 @@ class PopularUri extends Component {
 }
 
 
-export default PopularUri;
+export default List;

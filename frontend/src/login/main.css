@@ -1,0 +1,32 @@
+.navbar-container {
+  background-color: #ec383e;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.wrapper {
+  background: #fafafa;
+  height: 100vh;
+}
+
+
+.navbar-container .logo {
+    text-transform: uppercase !important;
+    width: 200px;
+    background: #fff;
+    font-size: 30px;    
+    color: #ec383e;
+    font-family: monospace;
+    padding-left: 30px;
+    height: 43px;
+}
+
+.login-container {
+  width: 400px;
+  padding:20px;
+  margin: auto;
+
+}

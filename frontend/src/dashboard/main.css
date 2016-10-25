@@ -1,0 +1,52 @@
+.dashboard-container {
+    width: 1024px;
+    margin: auto;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    box-shadow: 0px 0px 1px #eee;
+    background: #fff;
+    padding: 20px 20px 20px 0px;
+}
+
+.shorten-container {
+    width: 720px;
+    margin: auto;
+    padding: 20px 20px 0px 20px;
+}
+
+.tabs-container {
+    width: 300px;
+    margin: auto;
+    padding: 0px 20px 20px 20px;
+}
+
+.dashboard-container .urls-list .list-item {
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  padding: 5px;
+}
+
+
+.dashboard-container .urls-list  {
+  border-right: 1px solid #eee;
+  padding: 10px;
+}
+.dashboard-container .urls-list .list-item:hover {
+  background: #fafafa;
+}
+
+.dashboard-container .urls-list .active {
+
+  background: #eee;
+  
+}
+
+.BarCont {
+  height: 300px;
+}

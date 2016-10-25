@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import './ShrtnBar.css';
+import './shorten.css';
 import * as PubSub from 'pubsub-js'
 import axios from 'axios';
-class ShrtnBar extends Component {
+class Shorten extends Component {
 
   constructor(props) {
     super(props);
@@ -105,5 +105,5 @@ class ShrtnBar extends Component {
 }
 
 
-export default ShrtnBar;
+export default Shorten;
 
